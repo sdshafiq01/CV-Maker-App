@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal Information"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full name"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_et"
+            android:textSize="15sp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="15dp"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email address"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_et"
+            android:textSize="15sp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="15dp"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone number"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_et"
+            android:textSize="15sp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="15dp"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Objective"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/et_objects"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your opinion"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_et"
+            android:textSize="15sp"
+            android:maxLines="5"
+            android:inputType="textMultiLine"
+            android:gravity="top|start"
+            android:scrollHorizontally="false"
+            android:imeOptions="actionDone"
+            android:minLines="3"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="15dp"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Education"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:id="@+id/educationLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"/>
+
+        <Button
+            android:id="@+id/btn_add_education"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="20dp"
+            android:text="Add Education"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Experience"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:id="@+id/experienceLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"/>
+
+        <Button
+            android:id="@+id/btn_add_experience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="20dp"
+            android:text="Add Experience"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skills"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/et_skills"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your skills"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_et"
+            android:textSize="15sp"
+            android:maxLines="5"
+            android:inputType="textMultiLine"
+            android:gravity="top|start"
+            android:scrollHorizontally="false"
+            android:imeOptions="actionDone"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="15dp"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Projects"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:id="@+id/projectsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"/>
+
+        <Button
+            android:id="@+id/btn_add_projects"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="20dp"
+            android:text="Add Project"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Declarations"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/et_declarations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter declarations"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_et"
+            android:textSize="15sp"
+            android:maxLines="5"
+            android:text="@string/declaration_txt"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="15dp"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black" />
+
+
+        <Button
+            android:id="@+id/btn_save_cv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            android:paddingHorizontal="20dp"
+            android:text="Save CV"/>
+
+        <Button
+            android:id="@+id/btn_generate_cv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn"
+            android:visibility="gone"
+            app:backgroundTint="@color/black"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:paddingHorizontal="20dp"
+            android:text="Download CV"/>
+
+    </LinearLayout>
+</ScrollView>
